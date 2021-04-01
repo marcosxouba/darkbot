@@ -1,4 +1,4 @@
-console.log('Iniciando BOT...')
+console.log('Starting...')
 let { spawn } = require('child_process')
 let path = require('path')
 let fs = require('fs')
@@ -9,7 +9,7 @@ CFonts.say('Samu330\nWhatsApp Bot', {
   align: 'center',
   gradient: ['red', 'magenta']
 })
-CFonts.say(`'${package.name}' By @${package.author.name || package.author}`, {
+CFonts.say(`'${package.nam}' By @${package.author.nam || package.autho}`, {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']
@@ -25,7 +25,7 @@ function start(file) {
   let p = spawn(process.argv[0], args, {
     stdio: ['inherit', 'inherit', 'inherit', 'ipc']
   })
-  p.on('message', data => {
+  .on('message', data => {
     console.log('[RECEIVED]', data)
     switch (data) {
       case 'reset':
@@ -37,12 +37,11 @@ function start(file) {
         break
     }
   })
-  p.on('exit', code => {
-    console.error('Exited with code:', code)
-    if (code === 0) return
+  .on('error', e => {
+    console.error(e)
     fs.watchFile(args[0], () => {
+      start()
       fs.unwatchFile(args[0])
-      start(file)
     })
   })
   // console.log(p)
