@@ -1,4 +1,4 @@
-global.owner = ['+34626218348'] // Put your number here
+global.owner = ['524641228001'] // Put your number here
 global.mods = [] // Want some help?
 global.prems = [] // Premium user has unlimited limit
 global.APIs = { // API Prefix
@@ -11,11 +11,8 @@ global.APIKeys = { // APIKey Here
   'https://api.xteam.xyz': 'd90a9e986e18778b'
 }
 
-// Sticker WM
-global.packname = 'I hope you\'re fine'
-global.author = 'Nurutomo'
 
-global.multiplier = 69 // The higher, The harder levelup
+
 
 let fs = require('fs')
 let chalk = require('chalk')
