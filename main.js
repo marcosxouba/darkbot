@@ -115,8 +115,9 @@ global.reloadHandler = function () {
     conn.off('group-add', conn.onAdd)
     conn.off('group-leave', conn.onLeave)
   }
-  conn.welcome = 'Hola, @user!\nBienvenido al grupo @subject'
-  conn.bye = 'Adios @user!'
+  conn.welcome = 'Hola, @user!\nBienvenido al grupo @subject  es *OBLIGATORIO presentarse con NOMBRE, EDAD y LUGAR para permanecer en el grupo!⚠️ SI HACES SPAM TE DEJAMOS SIN WHATSAPP + GRUPO / INSTAGRAM⚠️ Recuerda leer las normas de la descripción. protegido por: L̴͕̰̠̤̃̒̒ḛ̵̠̟̠͆̓̎n̴̘͈͊͛͗͝a̶̛͓͊ A̵n̴o̶n̷y̶m̸i̶s̴s̶   ⪻̤̈N̴͖e̵͠b̷̛̈́á̴̬̌l̶͐́o̸͡⪼̤̈  ⪻̤̈M̸̞̱̜͒̈͑̐̈́̇•̴̻̖̼͓͈̀̈́̈̓̍̔̚ͅT̴̤̩̀͑̄͗̒͑̕ḩ̸͇͔̑͒́͌̄e̷̙̱̎•̷̔̓̉̽̑̕̕H̶͔̰͑å̷͙̹̾͝͝ť̵̎͐́̏̒̈ë̶̛͖͓̙͎́́ṛ̷̊̊⪼̤̈'
+
+  conn.bye = 'ADIÓS @user!'
   conn.handler = handler.handler
   conn.onAdd = handler.welcome 
   conn.onLeave = handler.leave
